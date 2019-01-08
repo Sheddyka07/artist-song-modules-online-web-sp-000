@@ -34,5 +34,5 @@ class Song
     name.downcase.gsub(' ', '-')
   end
   
-  extend memorable
+  extend Memorable::ClassMethods
 end
