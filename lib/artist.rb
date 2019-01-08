@@ -1,6 +1,7 @@
 require 'pry'
 
 class Artist
+  extend Memorable::ClassMethods
   attr_accessor :name
   attr_reader :songs
 
@@ -39,6 +40,5 @@ class Artist
   def to_param
     name.downcase.gsub(' ', '-')
   end
-  
-  extend Memorable::ClassMethods
+
 end
